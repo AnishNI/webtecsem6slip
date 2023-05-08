@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <script>
+            function changeTextStyle() {
+            var studentName = document.getElementById("studentName").value;
+            var output = document.getElementById("output");
+
+            if (studentName.trim() !== "") {
+                output.style.color = "red";
+                output.style.fontSize = "18px";
+                output.innerHTML = studentName;
+            } else {
+                output.innerHTML = "";
+                var image = document.createElement("img");
+                image.src = "https://via.placeholder.com/150";
+                image.width = 200;
+                image.height = 200;
+
+                image.onmouseover = function () {
+                this.width = 300;
+                this.height = 300;
+                };
+
+                image.onmouseout = function () {
+                this.width = 200;
+                this.height = 200;
+                };
+
+                image.onmousedown = function () {
+                this.width = 250;
+                this.height = 250;
+                };
+
+                image.onmouseup = function () {
+                this.width = 300;
+                this.height = 300;
+                };
+
+                output.appendChild(image);
+            }
+            }
+
+        </script>
+    </body>
+</html>

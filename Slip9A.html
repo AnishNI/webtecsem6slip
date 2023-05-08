@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            function check(){
+                user = form1.usr.value;
+                pass = form1.pwd.value;
+
+                if(user == pass){
+                    document.write("Successfully logged in");
+                }else{
+                    document.write("Invalid Username or Password ");
+                }
+
+            }
+        </script>
+        
+    </head>
+    <body>
+        <form name="form1">
+            Enter Username
+            <input type="text" name="usr"><br><br>
+
+            Enter Password
+            <input type="password" name="pwd"><br><br>
+
+            <input type="submit" value="Login" onclick="check()">
+        </form>
+    </body>
+</html>

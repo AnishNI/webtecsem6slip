@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>JavaScript Example</title>
+        <style>
+            #name {
+                Font-size: 14px;
+                Color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="name" onblur="changeStyle()" onmouseover="changeSize()" onmouseout="resetSize()" 
+                onmousedown="changeColor()" onmouseup="resetColor()">
+        <img id="img" src=https://via.placeholder.com/150 onload="changeImageSize()">
+        
+        <script>
+            changeStyle()
+            {
+                name = document.getElementById("name").value;
+                if(name)
+                {
+                    Document.getElementById("name").style.fontSize = "18px";
+                    Document.getElementById("name").style.color = "red";
+                } else
+                {
+                    Document.getElementById("img").style.display = "block";
+                }
+            }
+
+            changeSize()
+            {
+                Document.getElementById("name").style.fontSize = "16px";
+            }
+
+            resetSize()
+            {
+                Document.getElementById("name").style.fontSize = "14px";
+            }
+
+            changeColor()
+            {
+                Document.getElementById("name").style.color = "blue";
+            }
+
+            resetColor()
+            {
+                Document.getElementById("name").style.color = "red";
+            }
+
+            changeImageSize()
+            {
+                Document.getElementById("img").style.width = "200px";
+                Document.getElementById("img").style.height = "200px";
+            }
+        </script>
+    </body>
+</html>

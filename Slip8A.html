@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            function myAlert(){
+                alert("Exams are near,have you started preparing for?");
+            }
+
+            function myPrompt(){
+                var num1 = prompt("Enter first no: ");
+                var num2 = prompt("Enter second no: ");
+
+                num1 = parseFloat(num1);
+                num2 = parseFloat(num2);
+
+                if(!isNaN(Num1) && !isNaN(num2)){
+                    var sum = num1 + num2;
+                    document.write("The addition of " +num1+ " and " +num2+ " is " +sum);
+                }else{
+                    alert("Invalid Input. Please enter valid numbers.")
+                }
+            }
+
+            function myConfirm(){
+                confirm("The addition of " +num1+ " and " +num2+ " is " +sum);
+            }
+        </script>
+    </head> 
+    <body>
+        <form>
+            <input type="button" value="Alert" onclick="myAlert()">
+
+            <input type="button" value="Prompt" onclick="myPrompt()">
+
+            <input type="button" value="Confirm" onclick="myConfirm()">
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bookstore>
+  <book>
+    <title>JAVA</title>
+    <author>bal guru swami</author>
+    <year>2002</year>
+    <price>250</price>
+  </book>
+  <book>
+    <title>C</title>
+    <author>Dennis Richie</author>
+    <year>1973</year>
+    <price>500</price>
+  </book>
+</bookstore>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Validate User Name and Password</title>
+        <script>
+            function validateForm() {
+            var username = document.forms["myForm"]["username"].value;
+            var password = document.forms["myForm"]["password"].value;
+            if (username == "") {
+                Alert("Username must be filled out");
+                return false;
+            }
+            if (password == "") {
+                Alert("Password must be filled out");
+                return false;
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Validate User Name and Password</h2>
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

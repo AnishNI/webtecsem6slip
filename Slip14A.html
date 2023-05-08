@@ -1,0 +1,47 @@
+<html>
+	<head>
+        <style>
+            span
+            {
+            font-size: 40px;
+            }
+            table
+            {
+            color: blueviolet; 
+            }
+	    </style>
+	
+        <script type="text/javascript" >
+            function print1(str)
+            {
+                ob=new XMLHttpRequest();
+
+                ob.open("GET","Slip14A.php?q="+str,true);
+                ob.send(); 
+
+                ob.onreadystatechange=function()
+                {
+                    if(ob.readyState==4 && ob.status==200)
+                    {
+                        document.getElementById("i").innerHTML=ob.responseText;
+                    }
+                }
+            } 
+        </script>
+	</head>
+	
+	<body>
+        <center>
+        <h3>Display Details of selected emp </h3>
+        <form>
+            <select name=s1>
+            <option value=sapna>sapna</option>
+            <option value=swati>swati</option>
+            <option value=shweta>shweta</option>
+            </select>
+            <br><input type="button" value=PrintDetails onclick="print1(form.s1.value)">
+            <span id="i"></span>
+            </center>
+        </form>
+    </body>
+</html>

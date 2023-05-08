@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Inserting HTML content before and after the element in jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                //Add content after heading on button click
+                $("button.insert-after").click(function(){
+                $("h1").after('<img src="luffy.jpg" alt="symbol">');
+                });
+
+                //Add content before heading on button click
+                $("button.insert-before").click(function(){
+                $("h1").before('<img src="luffy.jpg" alt="symbol">');
+                });
+            });
+        </script>
+        <style>
+            h1{
+                display: inline-block; /*To placae marker image and heading in one line*/
+            }
+            body{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello World</h1>
+        <hr>
+        <button type="button" class="insert-before">Insert Before</button>
+        <button type="button" class="insert-after">Insert After</button>
+        <hr>
+    </body>
+</html>

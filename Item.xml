@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding ="UTF-8"?>
+
+<Item_Detail>
+
+    <item>
+	    <item_name>Mobile Phone</item_name>
+		<item_rate>10000</item_rate>
+		<item_quantity>30</item_quantity>
+    </item>
+
+    <item>
+	    <item_name>Laptop</item_name>
+		<item_rate>100000</item_rate>
+		<item_quantity>10</item_quantity>
+    </item>
+
+	<item>
+	    <item_name>Bag</item_name>
+		<item_rate>5000</item_rate>
+		<item_quantity>20</item_quantity>
+    </item>
+
+	<item>
+	    <item_name>Bike</item_name>
+		<item_rate>500000</item_rate>
+		<item_quantity>8</item_quantity>
+    </item>
+
+	<item>
+	    <item_name>Car</item_name>
+		<item_rate>3000000</item_rate>
+		<item_quantity>2</item_quantity>
+    </item>
+
+</Item_Detail>
